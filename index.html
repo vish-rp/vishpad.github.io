@@ -17,6 +17,43 @@
       color: white;
       padding: 2rem;
       text-align: center;
+      position: relative;
+    }
+    nav {
+      position: absolute;
+      top: 1rem;
+      right: 2rem;
+    }
+    .dropdown-btn {
+      background-color: #ffffff;
+      color: #1b4d3e;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      right: 0;
+      background-color: #f8fdf9;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      border-radius: 6px;
+      z-index: 1;
+      min-width: 220px;
+    }
+    .dropdown-content a {
+      color: #1b4d3e;
+      padding: 0.75rem 1rem;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background-color: #dff0e6;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
     }
     section {
       max-width: 1000px;
@@ -48,9 +85,6 @@
       font-size: 0.9rem;
       color: #777;
     }
-    ul li {
-      margin-bottom: 1.5rem;
-    }
     .cta {
       text-align: center;
       margin: 2rem 0;
@@ -71,6 +105,14 @@
 </head>
 <body>
   <header>
+    <nav class="dropdown">
+      <button class="dropdown-btn">Projects</button>
+      <div class="dropdown-content">
+        <a href="bellabeat.html" target="_blank">Bellabeat Case Study</a>
+        <a href="#">Student Performance Prediction</a>
+        <a href="#">EDA of COVID-19</a>
+      </div>
+    </nav>
     <h1>VishPad</h1>
     <p>My digital launchpad for data science, where stories, code, and creativity take flight.</p>
   </header>
@@ -80,16 +122,10 @@
     <p>My journey as a Computer Science Engineer laid a strong foundation in technology. In 2010, while prioritizing my family, my thirst for knowledge remained strong. This period became a catalyst for personal growth, leading me to dive deep into data. I mastered Excel, SQL, Tableau, Power BI, and R, and earned the Google Data Analyst certification to solidify my skills. Now pursuing a Master's in Data Science, I’m passionate about bridging the gap between motherhood and my data-driven ambitions. Highly motivated and collaborative, I thrive in dynamic environments and excel at going the extra mile. I am actively seeking data science internships or entry-level roles where I can contribute my skills and passion.</p>
   </section>
 
-  <section>
-    <h2>Projects</h2>
-    <ul>
-      <li><strong>Student Performance Prediction</strong> – Built regression models to predict academic success using student data. [<a href="#">View Project</a>]</li>
-      <li><strong>Exploratory Data Analysis of COVID-19</strong> – Visualized and interpreted global pandemic trends using Python. [<a href="#">View Project</a>]</li>
-    </ul>
-  </section>
-
   <section class="cta">
-    <a href="https://github.com/vish-rp/resume-msds/raw/main/Vishalakshi%20R%20Padakandla%20(MSDS)%20-%20Resume.pdf" download>Download My Resume</a>
+    <a href="https://github.com/vish-rp/resume-msds/raw/main/Vishalakshi%20R%20Padakandla%20(MSDS)%20-%20Resume.pdf" download>
+      Download My Resume (PDF)
+    </a>
   </section>
 
   <section>
@@ -104,4 +140,3 @@
   </footer>
 </body>
 </html>
-
