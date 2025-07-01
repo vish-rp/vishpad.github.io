@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bellabeat Case Study</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background: #ffffff;
+      color: #1b4d3e;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0 1.5rem;
+    }
+    header {
+      background-color: #1b4d3e;
+      color: white;
+      padding: 4rem 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      color: #ffd700;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+    main {
+      max-width: 1000px;
+      margin: 2rem auto;
+      background: #f8fdf9;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 30px rgba(0,0,0,0.1);
+    }
+    h1, h2, h3 {
+      color: #0e3d2c;
+    }
+    a {
+      color: #006d5b;
+    }
+    footer {
+      text-align: center;
+      margin: 3rem 0 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bellabeat Case Study</h1>
+    <p>Smart Device Usage Analysis for Marketing Strategy</p>
+  </header>
+
+  <main>
+    <h2>📌 Business Task</h2>
+    <p>Analyze smart device usage data to identify user behavior trends. Use these insights to inform the marketing strategy for the Bellabeat Leaf product.</p>
+
+    <h2>📂 Data Source</h2>
+    <p>Fitbit Fitness Tracker dataset available on <a href="https://www.kaggle.com/datasets/arashnic/fitbit" target="_blank">Kaggle</a>. The dataset includes daily activity, sleep, and calorie data from 30 users over 31 days.</p>
+
+    <h2>🛠 Tools Used</h2>
+    <ul>
+      <li>R (tidyverse, lubridate, ggplot2, janitor)</li>
+      <li>Google Sheets</li>
+      <li>Tableau (for optional visualization)</li>
+    </ul>
+
+    <h2>🔍 Process</h2>
+    <h3>1. Ask</h3>
+    <p>What trends in smart device usage can Bellabeat use to better market their products?</p>
+    <h3>2. Prepare</h3>
+    <p>Downloaded and reviewed the structure of the Fitbit CSV files. Focused on <code>dailyActivity_merged</code> and <code>sleepDay_merged</code> files.</p>
+    <h3>3. Process</h3>
+    <ul>
+      <li>Cleaned column names</li>
+      <li>Formatted date columns</li>
+      <li>Joined activity and sleep data by user ID and date</li>
+    </ul>
+    <h3>4. Analyze</h3>
+    <ul>
+      <li>Average daily steps: &lt; 7,000 for most users</li>
+      <li>Positive correlation between active minutes and calories burned</li>
+      <li>Users who tracked sleep averaged ~6.8 hours</li>
+    </ul>
+    <h3>5. Share</h3>
+    <p>Created charts in ggplot2 to visualize step count, sleep distribution, and calorie patterns.</p>
+    <h3>6. Act</h3>
+    <ul>
+      <li>Promote daily step goals through app reminders</li>
+      <li>Encourage consistent sleep tracking</li>
+      <li>Target women with irregular usage habits using personalized engagement</li>
+    </ul>
+
+    <h2>🔗 GitHub Repository</h2>
+    <p><a href="#">View the full R code and notebook on GitHub</a> (add link here)</p>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Vishalakshi Padakandla</p>
+  </footer>
+</body>
+</html>
